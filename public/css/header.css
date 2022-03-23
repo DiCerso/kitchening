@@ -1,0 +1,35 @@
+header{
+    width: 100%;/*la caja el header cubre todo el ancho*/
+}
+
+header .logo{
+    background-image: url('/images/logo.jpg');
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    border: solid 2px var(--colorGrisClaro);
+    height: 180px;
+    margin: 15px auto 30px; /*auto en los costados siempre centra*/
+    width: 180px;
+}
+
+.header__burger{
+    width: 50px;
+    padding: 5px;
+    font-size: 32px;
+    background-color: var(--colorGrisOscuro);
+    color: white;
+    border: none;
+    border-radius: 5%;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.header__menu li{
+    width: 100%;
+    background-color: var(--colorGrisOscuro);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-bottom: solid 2px white;
+}

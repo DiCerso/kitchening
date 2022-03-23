@@ -1,0 +1,54 @@
+body.home{
+    background-image: url(/images/bg-body.png);
+}
+
+.home__box-banner{
+    display: none;
+}
+
+.home__box-products{
+    margin: 30px 0;
+}
+
+.home__product{
+    width: 100%;
+}
+
+.home__product__box-image{
+    position: relative;/*establecemos que es relative para poder encerrar al position absolute del stiker*/
+}
+
+.home__product__image{
+    width: 100%;
+}
+
+.home__product__sticker{
+    position: absolute; /*hacemos que el stiker sea absolute y lo posicionamos con top y rigth*/
+    top: 0;
+    right: 10px;
+}
+
+.home__product__box__zoom{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    text-align: center;/*centra el texto*/
+    width: 100%; /*como no es un elemento de caja no aplica*/
+    display: inline-block;
+    padding: 10px 0;
+    position: absolute;
+    top: 45%;
+    left: 0px;/*si no pongo esto desaparece*/
+}
+
+.home__product h4{
+    margin: 10px 0;
+}
+
+.home__product__more{
+    background-color: var(--colorGrisOscuro);
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 0;
+    text-align: center;
+    width: 80px;
+}

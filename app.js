@@ -13,4 +13,4 @@ app.get('/', (req, res)=>{
 
 
 
-app.listen(port, ()=> console.log("server running in 3030"))
+app.listen(port, ()=> console.log("server running in http://localhost:3030"))

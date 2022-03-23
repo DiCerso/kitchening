@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, geneva, Tohama, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;/* quitamos las viñetas a las listas*/
+}
+
+/* img{
+    width: 100%; agrandamos el 100% todas las imagenes para poder centrar
+} */
