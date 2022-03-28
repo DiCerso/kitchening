@@ -8,6 +8,8 @@ body.home{
 
 .home__box-products{
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .home__product{
@@ -69,18 +71,13 @@ body.home{
     /* Productos */
 
     .home__box-products{
-        overflow: hidden;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .home__product{
         width: 49%;
-        float: left;
-        margin-right: 2%;/*le coloco 2% de espacio entre los 2 productos*/
-    }
-
-    .home__product:nth-child(even){/*lo que hace nth es seleccionar elementos especificos*/
-        /* even selecciona a los elementos pares */
-        margin-right: 0;
     }
 }
 
@@ -88,16 +85,6 @@ body.home{
 @media(min-width: 768px){
     .home__product{
         width: 32%;
-        margin-right: 2%;
     }
-
-    .home__product:nth-child(even){/*lo que hace nth es seleccionar elementos especificos*/
-        /* even selecciona a los elementos pares */
-        margin-right: 2%;
-    }
-
-    .home__product:nth-child(3n){/*lo que hace nth es seleccionar elementos especificos*/
-        /* 3n hace que cada 3 haga lo que quiero */
-        margin-right: 0;
-    }
+    
 }
