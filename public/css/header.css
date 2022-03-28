@@ -1,16 +1,17 @@
 header{
     width: 100%;/*la caja el header cubre todo el ancho*/
+    display: flex;
+    flex-direction: column;/*establecemos que se coloque todo en columan*/
+    align-items: center;
 }
 
-header .logo{
-    background-image: url('/images/logo.jpg');
-    background-position: center;
+header .header__logo{
     border-radius: 50%;
-    background-size: cover;
     border: solid 2px var(--colorGrisClaro);
     height: 180px;
     margin: 15px auto 30px; /*auto en los costados siempre centra*/
     width: 180px;
+    margin: 30px 0;
 }
 
 .header__burger{
@@ -21,8 +22,18 @@ header .logo{
     color: white;
     border: none;
     border-radius: 5%;
-    margin: 0 auto 30px;
     display: block;
+    margin-bottom: 30px;
+}
+
+.header__menu{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.header__menu ul{
+    display: flex;/*al hacer esto pone a todos en linea*/
+    flex-direction: column;/*para que no pase lo de arriba ponemos esto*/
 }
 
 .header__menu li{
@@ -44,26 +55,18 @@ header .logo{
         display: none;/*hacemos desaparecer el menu hamburgesa*/
     }
 
-
     .header__menu ul{
-        overflow: hidden;/*esta linea hace que se ocupe el espacio que ocupe las li por que estan con float*/
-    }
-    
-    .header__menu li{
-        width: 15.5%;
-        font-size: 0.6rem;/**/
-        float: left;/* que sean flotantes es que estan por encima de la pagina */
-        margin-right: 1.4%;
+        flex-direction: row;/*hacemos que se coloque de izquierda a derecha*/
+        justify-content: space-between;/*ponemos que se separen colocando un espacio entre ellos*/
     }
 
-    .header__menu li:last-child{/*esto es un seudoselector, lo que hace es seleccionar el ultimo elemento del li*/
-        margin-right: 0;
+    .header__menu li{
+        font-size: 0.6rem;/**/
+        width: 15.5%;/*le colocamos un ancho a cada boton */
     }
 }
-
 /* Laptop */
 @media(min-width: 768px){
     .header__menu li{
-        font-size: 1rem;/*cambio el tamaño de letra en 768px */        
-    }
+        font-size: 1rem;/*cambio el tamaño de letra en 768px */        }
 }
