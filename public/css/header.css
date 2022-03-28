@@ -33,3 +33,37 @@ header .logo{
     padding: 10px 0;
     border-bottom: solid 2px white;
 }
+
+
+/* Tablet */
+@media (min-width: 460px){ /*cuando supera los 460 cambia la pagina */
+    /* Colocar siempre el mismo selector anteriormente porque sino no toma los cambios */
+    
+
+    .header__burger{
+        display: none;/*hacemos desaparecer el menu hamburgesa*/
+    }
+
+
+    .header__menu ul{
+        overflow: hidden;/*esta linea hace que se ocupe el espacio que ocupe las li por que estan con float*/
+    }
+    
+    .header__menu li{
+        width: 15.5%;
+        font-size: 0.6rem;/**/
+        float: left;/* que sean flotantes es que estan por encima de la pagina */
+        margin-right: 1.4%;
+    }
+
+    .header__menu li:last-child{/*esto es un seudoselector, lo que hace es seleccionar el ultimo elemento del li*/
+        margin-right: 0;
+    }
+}
+
+/* Laptop */
+@media(min-width: 768px){
+    .header__menu li{
+        font-size: 1rem;/*cambio el tamaño de letra en 768px */        
+    }
+}

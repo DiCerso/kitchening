@@ -52,3 +52,52 @@ body.home{
     text-align: center;
     width: 80px;
 }
+
+/* Tablets */
+@media(min-width: 460px){
+
+    /*Banner*/
+    .home__box-banner{
+        display: block;/*hacemos que aparezca el banner*/
+        margin-top: 30px;
+    }
+
+    .home__box-banner img{
+        width: 100%;
+    }
+
+    /* Productos */
+
+    .home__box-products{
+        overflow: hidden;
+    }
+
+    .home__product{
+        width: 49%;
+        float: left;
+        margin-right: 2%;/*le coloco 2% de espacio entre los 2 productos*/
+    }
+
+    .home__product:nth-child(even){/*lo que hace nth es seleccionar elementos especificos*/
+        /* even selecciona a los elementos pares */
+        margin-right: 0;
+    }
+}
+
+/* Laptop */
+@media(min-width: 768px){
+    .home__product{
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(even){/*lo que hace nth es seleccionar elementos especificos*/
+        /* even selecciona a los elementos pares */
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(3n){/*lo que hace nth es seleccionar elementos especificos*/
+        /* 3n hace que cada 3 haga lo que quiero */
+        margin-right: 0;
+    }
+}

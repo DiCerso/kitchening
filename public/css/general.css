@@ -6,6 +6,9 @@
 
 body{
     font-family: Verdana, geneva, Tohama, sans-serif;
+    max-width: 1180px;/*le colocamos el maximo de width*/
+    margin: 0 auto;
+    /*le colocamos un margin 0 de arriba y abajo y colocamos auto en los costados*/
 }
 
 a{
