@@ -1,6 +1,17 @@
-.footer__menu li{
-    width: 100%;
+
+.footer__menu{
     background-color: var(--colorRojo);
+    width: 100%;
+}
+
+
+.footer__menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__menu li{
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
@@ -11,13 +22,18 @@
 @media (min-width: 768px){
 
     .footer__menu{
-        background-color: var(--colorRojo);
-        width: 100%;
         padding: 60px 0;
         text-align: center;
         border-radius: 20px 20px 0 0;
         /*lados: izquierda arriba, derecha arriba, derecha abajo, izquierda abajo */
     }
+
+
+    .footer__menu ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+
 
     .footer__menu li{
         width: 110px;
