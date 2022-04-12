@@ -1,3 +1,31 @@
+@keyframes rotacion{
+
+    0%{
+        -webkit-trasform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    25%{
+        -webkit-trasform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+
+    50%{
+        -webkit-trasform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+    75%{
+        -webkit-trasform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100%{
+        -webkit-trasform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+
 header{
     width: 100%;/*la caja el header cubre todo el ancho*/
     display: flex;
@@ -12,6 +40,13 @@ header .header__logo{
     margin: 15px auto 30px; /*auto en los costados siempre centra*/
     width: 180px;
     margin: 30px 0;
+    animation: rotacion 5s normal linear infinite;
+    /*elegimos la animacion,
+    que dure 5s,
+    normal hace que vaya de 0% a 100%(reverse hace que vaya de 100% a 0%),
+    linear hace que la animacion sea mas fluida por que sino lo hace de la forma mas rapida y queda mal
+    infinite hace que la animacion se repita infinitamente
+    */
 }
 
 .header__burger{
@@ -43,6 +78,11 @@ header .header__logo{
     text-transform: uppercase;
     padding: 10px 0;
     border-bottom: solid 2px white;
+}
+
+.header__menu li:hover{
+    transition: all 0.2s; /*hacemos que la transicion te todos los componentes cambie en 0.5s*/
+    background-color: #f38c2c;
 }
 
 
