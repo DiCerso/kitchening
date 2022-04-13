@@ -68,6 +68,18 @@ body.home{
         width: 100%;
     }
 
+    .home__product__box-image:hover .home__product__image{
+        transform: scale(1.2);
+        position:relative;
+        z-index: 10;
+        transition: transform 1s;
+    }
+    .home__product__box-image:hover .home__product__sticker{
+        transform: translateX(30px) translateY(-22px    ) scale(1.2);
+        z-index: 10;
+        transition: transform 1s;
+    }
+
     /* Productos */
 
     .home__box-products{
@@ -78,6 +90,12 @@ body.home{
 
     .home__product{
         width: 49%;
+    }
+
+    .home__product__more:hover{
+        transform: scale(1.2);
+        transition: transform 1s, background-color 2s;
+        background-color: #f38c2c;
     }
 }
 
